@@ -123,4 +123,23 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+        'providers' => [
+            /*
+            |--------------------------------------------------------------------------
+            | Autoloaded Service Providers
+            |--------------------------------------------------------------------------
+            |
+            | The service providers listed here will be automatically loaded on the
+            | request to your application. Feel free to add your own services to
+            | this array to grant expanded functionality to your applications.
+            |
+            */
+
+            // Laravel Framework Service Providers...
+            // ... outros providers padrão ...
+
+            // App Service Providers...
+            App\Providers\ProxmoxServiceProvider::class,
+        ],
+
 ];

@@ -35,4 +35,13 @@ return [
         ],
     ],
 
+        'proxmox' => [
+            'host' => env('PROXMOX_HOST'),
+            'port' => env('PROXMOX_PORT', 8006),
+            'user' => env('PROXMOX_USER'),
+            'password' => env('PROXMOX_PASSWORD'),
+            'realm' => env('PROXMOX_REALM', 'pam'),
+            'verify_ssl' => env('PROXMOX_VERIFY_SSL', true),
+        ],
+
 ];
